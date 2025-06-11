@@ -1,0 +1,36 @@
+Context-Aware Gemini Chat
+Objective
+Create a simple interactive chatbot using the Google Gemini Free API. Your program will run in the console and should:
+
+Prompt the user for input multiple times, sending each message to the Gemini model.
+Preserve the conversation context across turns so the model can “remember” earlier inputs.
+Demonstrate using model parameters (e.g. temperature) to influence the response.
+No GUI or written essay is required – focus on writing code. The final result should be a console script where the last line printed is the final response from the Gemini model.
+
+Requirements
+Use the Gemini API: Initialize a Gemini chat session and set the model (e.g. "gemini-1.5-flash").
+Multiple turns with context: Prompt the user for a first input (e.g. a question or topic), send it to Gemini, then prompt for a second input (e.g. additional detail or a follow-up question). Include the entire conversation history when sending the second message so that Gemini preserves context across both turns.
+Console I/O: The program should use simple console input/output (input() and print() in Python). No graphical interface is needed.
+Model configuration : Allow the code to set or adjust model parameters like temperature or top-p. For example, you could hard-code a temperature value or let the user specify it. This will affect how creative or focused the response is.
+Final output: After the final Gemini API call, print the model’s last response to the console. The printed text should be the last answer from Gemini.
+Deliverables
+
+When run, the script should:
+
+Initialize a Gemini chat session.
+Ask the user for an initial input and send it to the model.
+Ask the user for a second input and send it along with the earlier context.
+Extend the conversation to a third or more turns: prompt the user again, append the new message to the conversation, and print the updated final response.
+Let the user specify model parameters at runtime (e.g. prompt for a temperature value) and pass these to the Gemini API call to see how the output changes.
+Print the final Gemini response (text only) to the console.
+Ensure the code runs without errors (aside from needing the Gemini API key).
+
+Include a README.md with:
+
+What the script does
+How to run it (setup, dependencies)
+Ensure the code runs (with a valid Gemini API key) and prints the final response.
+
+Do not commit API key.
+use .env for APi key and all.
+add proper gitignore.
